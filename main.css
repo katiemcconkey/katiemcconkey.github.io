@@ -84,6 +84,13 @@ ul {
     margin-right: 10%;
     margin-left: 15%;
 }
+.table2{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-size: 35px;
+}
 
 .cheese{
     visibility: hidden;
@@ -109,5 +116,16 @@ ul {
 .sizing{
     margin-left: 30%;
     margin-right: 30%; 
+}
+
+.row2{
+    margin-left: 25%;
+    margin-right: 25%;
+    display:flex
+}
+
+.column2{
+    font-size: 30px;
+    flex:100%
 }
 
