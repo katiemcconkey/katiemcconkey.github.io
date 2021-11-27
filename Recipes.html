@@ -108,8 +108,19 @@
         </div>
    <div>
        <p>
-        Or if you'd rather <a href="beefRecipes.html"> click here </a> view our range of other recipes
+        Or if you'd rather click here view our range of other recipes
        </p>
+       <form>
+           <select name="dropdown" id="val">
+           <option value="beefRecipes.html">Beef Recipes</option>
+           <option value="chickenRecipes.html">Chicken Recipes</option>
+           <option value="porkRecipes.html">Pork Recipes</option>
+           <option value="veganRecipes.html">Vegan Recipes</option>
+       </select>
+       <input type=button value="Go" onclick="change()" style="background-color: #385E1D; border-color: #385E1D; border-radius: 4px;"/>
+       </form>
+       
+
    </div>
     
     <div class="navbar" class="light-theme">
@@ -121,6 +132,15 @@
         <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
         <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
+    <script type="text/javascript">
+        function change()
+        {
+            var url = document.getElementById('val').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
 </body>
 </html>
     
