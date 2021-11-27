@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YourFridge</title>
+    <link rel="stylesheet" href="main.css">   
+    <h1> Your Fridge <img src="assets\add.png" id="add"></h1>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Homepage.html"><img src="assets\home.png"></a>
+        <a href="fridge.html"><img src="assets\fridge.png"></a>
+        <a href="shoppingList.html"><img src="assets\shopping.png"></a>
+        <a href="Recipes.html"><img src="assets\recipes.png"></a>
+        <a href="LikedRecipes.html"><img src="assets\heart.png"></a>
+        </div>
+
+<!-- <div>
+    <input type='text' id='input'/>
+    <input type="image" src="assets\add.PNG " id="add" height="30" />
+    
+</div> -->
+
+
+
+<ul id="list"> 
+    <input type="radio" id= "challenge1" style="border-color: #68AD36;" onclick="challenge1()">
+                    <label for="challenge1">Milk</label> 
+    <div></div>
+    <input type="radio" id= "challenge2" style="border-color: #68AD36;" onclick="challenge2()">
+                    <label for="challenge2">Cheese</label>
+                    <div></div>
+    <input type="radio" id= "challenge3" style="border-color: #68AD36;">
+                    <label for="challenge3">Strawberry Jam</label>
+                    <div></div>
+    <input type="radio" id= "challenge4" style="border-color: #68AD36;">
+                    <label for="challenge4">Yoghurt</label>
+                    <div></div>
+    <input type="radio" id= "challenge5" style="border-color: #68AD36;">
+                    <label for="challenge5">Carrots</label>
+</ul>
+
+<div id="c" style="display: none;">
+    <p>Info:
+    Item: Cheese
+    Weight:500g
+    Expires: 23/12/21
+    </p>   
+</div>
+
+
+<script>
+
+function challenge2(){
+    document.getElementById('c').style.display = "block";
+}
+
+</script>
+
+
+</body>
+</html>
