@@ -126,6 +126,6 @@ ul {
 
 .column2{
     font-size: 30px;
-    flex:100%
+    display: flex;
 }
 
