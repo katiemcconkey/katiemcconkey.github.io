@@ -62,7 +62,6 @@ ul {
 
 .row{
     display: flex;
-    font-size: 40;
 }
 
 .table{
@@ -84,9 +83,9 @@ ul {
 
 .cent{
     margin-bottom: 40%;
-    margin-top: 50%;
+    margin-top: 30%;
     margin-left: 40%;
     margin-right: 40%; 
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
