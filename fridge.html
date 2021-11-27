@@ -1,9 +1,24 @@
 <html>
 <head>
+    <script>
+        type="text/javascript"
+        function additem(){
+            document.getElementById('i').style.visibility="visible";
+        }
+        function remove(){
+            document.getElementById('i').style.visibility="hidden";
+        }
+        function info(){
+            document.getElementById('information').style.visibility="visible";
+        }
+        function removeitem(){
+            document.getElementById('example').style.visibility="hidden";
+        }
+    </script>
     <meta charset="UTF-8">
     <title>Shopping List</title>
     <link rel="stylesheet" href="main.css">   
-    <h1> Your Fridge <img src="assets/add.PNG" height="40px" width="40px"></h1>
+    <h1> Your Fridge</h1> <input type="image" src="assets/add.PNG" height="40px" width="40px" onclick="additem();">
     
 </head>
 <body>
@@ -13,8 +28,8 @@
             <th><h3>Amount</h3></th>
             <th><h3>Expiry Date</h3></th>
         </tr>
-        <tr>
-            <td>Parmesan</td>
+        <tr id="example">
+            <td id="parm" onclick="info()">Parmesan</td>
             <td>500g</td>
             <td>12/12/21</td>
         </tr>
@@ -54,6 +69,35 @@
             <td>10/12/21</td>
         </tr>
     </table>
+    <div id='i' style="visibility: hidden;">
+        <label>Product</label>
+        <input type='text' id='input' required/>
+        <br>
+        <br>
+        <label>Amount</label>
+        <input type='number' id='amount' min = 1 required/>
+        <br>
+        <br>
+        <label>Expiration date</label>
+        <input type='text' id='user'/>
+        <br>
+        <br>
+        <input type="button" id="submit" value="Add" style="border-color : #F0F8ED; background-color: #F0F8ED; border-radius: 4px;" onclick="remove();">
+    </div>
+    <div id='information' style="visibility: hidden;">
+        <h3>
+            Info:
+        </h3>
+        <p>
+            Item: Parmesan
+            <br>
+            Weight: 500g
+            <br>
+            Expires: 12/21/21
+            <br>
+            <input type="button" id="submit" value="Use Item" style="border-color : #F0F8ED; background-color: #F0F8ED; border-radius: 4px;" onclick="removeitem();">
+        </p>
+    </div>
 
     <div class="navbar" class="light-theme">
         <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
