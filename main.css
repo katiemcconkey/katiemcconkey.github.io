@@ -19,6 +19,12 @@ h2{
     text-align: center;  
 }
 
+h3{
+    font-family: Calibri;
+    font-size: 40;
+    color: #68AD36;
+    text-align: center;  
+}
 ul {
     font-size: helvetica;
 }
