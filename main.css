@@ -78,3 +78,10 @@ ul {
     margin-right: auto;
     text-align: left;
 }
+
+.centre{
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 35%;
+}
