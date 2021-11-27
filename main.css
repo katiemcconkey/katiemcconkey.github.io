@@ -74,10 +74,12 @@ ul {
 }
 
 .row{
-    display: flex;
+    height: 50%;
+    width: 100%;
 }
 
 .table{
+    align-content: center;
     text-align: center;
 }
 
