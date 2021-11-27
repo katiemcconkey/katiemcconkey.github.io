@@ -11,7 +11,7 @@
     <tr>
         <td><img src="assets\heart.png" width=25% height=25%></td>
         <td><a href="chickenRecipes.html">Enchiladas</a></td>
-        <td><button type="button" Style="background-color: #68AD36; border-radius: 4px; font-size: 40; color: #385E1D;">Copy Link</button></td>
+        <td><button type="button" Style="background-color: #68AD36; border-radius: 4px; font-size: 40; color: #385E1D;" onclick=chickenlink()>  Copy Link</button></td>
     </tr>
     <tr>
         <td></td>
@@ -21,7 +21,7 @@
     <tr>
         <td><img src="assets\heart.png" width=25% height=25%></td>
         <td><a href="beefRecipes.html">Spaghetti Bolognese</a></td>
-        <td><button type="button" Style="background-color: #68AD36; border-radius: 4px; font-size: 40; color:#385E1D;">Copy Link</button></td>
+        <td><button type="button" Style="background-color: #68AD36; border-radius: 4px; font-size: 40; color:#385E1D;" onclick=beeflink()>Copy Link</button></td>
     </tr>  
 </table>  
 
@@ -34,6 +34,16 @@
     <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
     <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
 </div>
+
+<script>
+    function chickenlink(){
+        alert("Here is the link to the Chicken Enchiladas recipe! Copy to share: https://katiemcconkey.github.io/chickenRecipes.html");
+    }
+
+    function beeflink(){
+        alert("Here is the link to the Spaghetti Bolognese recipe! Copy to share: https://katiemcconkey.github.io/beefRecipes.html");
+    }
+</script>
 
 </body>
 </html>
