@@ -72,3 +72,9 @@ ul {
 .cheese{
     visibility: hidden;
 }
+
+.likedrecipes{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
