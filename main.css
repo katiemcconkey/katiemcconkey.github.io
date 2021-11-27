@@ -82,8 +82,7 @@ ul {
 }
 
 .cent{
-     margin-left: auto;
-    margin-right: auto; 
+    margin-left: 30%;
+    margin-right: 30%; 
     text-align: center;
-    width: 700px;
 }
