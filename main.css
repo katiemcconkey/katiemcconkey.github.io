@@ -76,7 +76,9 @@ ul {
 .likedrecipes{
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
+    width: 700px;
+    padding: 2.5%;
 }
 
 .centre{
