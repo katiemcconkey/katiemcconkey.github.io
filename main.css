@@ -69,13 +69,12 @@ ul {
 }
 
 .column{
-    flex:50%;
+    margin-top: 15%;
     
 }
 
 .row{
     height:50%;
-    margin-top: 20%;
     margin-left: 15%;
     margin-right: 15%; 
 }
