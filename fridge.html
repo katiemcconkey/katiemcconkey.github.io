@@ -1,13 +1,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>YourFridge</title>
+    <title>Shopping List</title>
     <link rel="stylesheet" href="main.css">   
-    <h1> Your Fridge <img src="assets\add.png" id="add"></h1>
-
+    <h1> Your Fridge <img src="assets/add.PNG" height="40px" width="40px"></h1>
+    
 </head>
-
 <body>
+    <table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center; border-color: #385E1D; font-size: 40;">
+        <tr style="background-color:F0F8ED;">
+            <th><h3>Item</h3></th>
+            <th><h3>Amount</h3></th>
+            <th><h3>Expiry Date</h3></th>
+        </tr>
+        <tr>
+            <td>Parmesan</td>
+            <td>500g</td>
+            <td>12/12/21</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>4pints</td>
+            <td>14/12/21</td>
+        </tr>
+        <tr>
+            <td>Pasta</td>
+            <td>4kg</td>
+            <td>30/12/22</td>
+        </tr>
+        <tr>
+            <td>Butter</td>
+            <td>500g</td>
+            <td>12/12/21</td>
+        </tr>
+        <tr>
+            <td>Flour</td>
+            <td>2kg</td>
+            <td>12/12/23</td>
+        </tr>
+        <tr>
+            <td>Carrots</td>
+            <td>2kg</td>
+            <td>29/11/21</td>
+        </tr>
+        <tr>
+            <td>Yoghurt</td>
+            <td>40g</td>
+            <td>02/12/21</td>
+        </tr>
+        <tr>
+            <td>Eggs</td>
+            <td>12</td>
+            <td>10/12/21</td>
+        </tr>
+    </table>
+
     <div class="navbar" class="light-theme">
         <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
         <a href="fridge.html"><img src="assets\fridge.png"style="height: 130px; width: 130px;" ></a>
@@ -17,49 +64,6 @@
         <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
         <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
-
-<!-- <div>
-    <input type='text' id='input'/>
-    <input type="image" src="assets\add.PNG " id="add" height="30" />
     
-</div> -->
-
-
-
-<ul id="list"> 
-    <input type="radio" id= "challenge1" style="border-color: #68AD36;" onclick="challenge1()">
-                    <label for="challenge1">Milk</label> 
-    <div></div>
-    <input type="radio" id= "challenge2" style="border-color: #68AD36;" onclick="challenge2()">
-                    <label for="challenge2">Cheese</label>
-                    <div></div>
-    <input type="radio" id= "challenge3" style="border-color: #68AD36;">
-                    <label for="challenge3">Strawberry Jam</label>
-                    <div></div>
-    <input type="radio" id= "challenge4" style="border-color: #68AD36;">
-                    <label for="challenge4">Yoghurt</label>
-                    <div></div>
-    <input type="radio" id= "challenge5" style="border-color: #68AD36;">
-                    <label for="challenge5">Carrots</label>
-</ul>
-
-<div id="c" style="display: none;">
-    <p>Info:
-    Item: Cheese
-    Weight:500g
-    Expires: 23/12/21
-    </p>   
-</div>
-
-
-<script>
-
-function challenge2(){
-    document.getElementById('c').style.display = "block";
-}
-
-</script>
-
-
 </body>
 </html>
