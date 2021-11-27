@@ -89,6 +89,7 @@ ul {
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 40%;
+    font-size: 35px;
 }
 
 .cheese{
@@ -124,6 +125,7 @@ ul {
 }
 
 .column2{
+    font-size: 30px;
     flex:100%
 }
 
