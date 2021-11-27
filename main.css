@@ -69,21 +69,21 @@ ul {
 }
 
 .column{
-    flex:50%;
+    margin-top: 15%;
     
 }
 
 .row{
-    padding: 2.5%;
-    height: 50%;
-    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%; 
 }
 
 .table{
-    margin-left: 40%;
-    margin-right: 40%;
-    align-content: center;
     text-align: center;
+    right: 50%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 15%;
 }
 
 .cheese{
@@ -105,4 +105,9 @@ ul {
     margin-right: 30%; 
     text-align: center;
     font-size: 30px;
+}
+
+.sizing{
+    margin-left: 30%;
+    margin-right: 30%; 
 }

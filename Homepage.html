@@ -8,6 +8,7 @@
       </p>
     </head>
     <body>
+    <div class="column">
         <div class="row">
                 <h2 style="font-size: 40px;">
                     Weekly Challenges:
@@ -16,13 +17,19 @@
                     <p>
                     <input type="radio" id= "challenge1" style="border-color: #68AD36;">
                     <label style="font-size: 25px;" for="challenge1">Try completing a full day of eating vegan food to earn your food hero badge</label>
+                    <img src="assets/lock.jpg" style="height: 20px; width: 20px;">
                     <div></div>
                     <input type="radio" id= "challenge2" style="border-color: #68AD36;">
                     <label style="font-size: 25px;"for="challenge2">Try to reduce your food waste by 50% to earn your eco warrior badge</label>
+                    <img src="assets/lock.jpg" style="height: 20px; width: 20px;">
                     <div></div>
-                    <input type="radio" id= "challenge3" style="border-color: #68AD36;">
+                    <input type="radio" id= "challenge3" style="border-color: #68AD36;" >
                     <label style="font-size: 25px;" for="challenge3">Go zero waste for a full day to earn your save the turtles badge</label>
+                    <img src="assets/lock.jpg" id = "1" style="height: 20px; width: 20px;" >
                 </p> </div>
+                
+            </div>
+            <div class="row">
                 
             </div>
             <div class="row">
@@ -85,6 +92,7 @@
                     </table>
                     </div>
             </div>
+        </div>
             <!-- <div class="column" style="border-color: #385E1D;">
                 <h2>
                     Badges
@@ -111,5 +119,12 @@
             <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 45px; width: 45px;"></a>
             <a href="Profile.html"><img src="assets\User.PNG" style="height: 45px; width: 45px;"></a>
         </div>
+         <script>
+        function change(){
+            var i = getElementById("1")
+            display(i) = none;
+        }
+    </script>
     </body>
+   
 </html>
