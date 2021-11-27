@@ -8,25 +8,103 @@
 </head>
 
 <body>
-    <h2> Spaghetti Bolognese </h2>
-    <h3> Ingredients </h3>
-        <ul>
-            <li> 1 tbsp olive olive </li>
-        </ul>
-       
-      
-    
-    <h3>Method</h3>
-    <ol>
-        <li> </li>
-    </ol>
+    <div class="column2">
+        <h3>
+             Vegan Quesadilla
+        </h3>
+        <div class="table2">
+            <style>
+                table, th, td{
+                    border-bottom: 2px solid #385E1D;
+                    border-collapse: collapse;
+                   
+                }
+                
+            </style>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <h2>
+                      Ingredients:  
+                    </h2>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        75g Dairy free cheese
+                    </td>
+                </tr>
+                <tr><td>
+                        2 Large flour tortillas
+                    </td>
+                </tr>
+                    <tr>
+                      <td>
+                        Sliced jalapenos
+                    </td>  
+                    </tr>
+            </table>
+            </div>
+    </div>
+    <div class="column2">
+        <div class="table2">
+            <style>
+                table, th, td{
+                    border-bottom: 1px solid #385E1D;
+                    border-collapse: collapse;
+                    font-size: 35px;
+                   
+                }
+                
+            </style>
+            <table style="width:100%; text-align: center;">
+                <tr>
+                    <h2>
+                        Method:
+                    </h2>
+                    
+                </tr>
+                <tr>
+                    <td> 
+                        Step 1:
+                        Put tortilla into large frying pan and cook over medium heat for 2 minutes
+                    </td>
+                </tr>
+                <tr><td>
+                        Step 2:
+                        Add the cheese, cover with second tortilla and heat until melted
+                    </td>
+                </tr>
+                    <tr>
+                      <td>
+                        Step 3:
+                        Cut into slices and add jalapenos
+                    </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                          Step 4:
+                          Serve and enjoy!
+                      </td>  
+                      </tr>
+            </table>
+            </div>
+    </div>
+<div>
+   <p>
+    Or if you'd rather click here view our range of other recipes
+   </p>
+   <form>
+       <select name="dropdown" id="val">
+       <option value="Recipes.html">Recommended Recipes</option>
+       <option value="beefRecipes.html">Beef Recipes</option>
+       <option value="chickenRecipes.html">Chicken Recipes</option>
+       <option value="porkRecipes.html">Pork Recipes</option>
+   </select>
+   <input type=button value="Go" onclick="change()" style="background-color: #385E1D; border-color: #385E1D; border-radius: 4px;"/>
+   </form>
+   
 
-    <h2>Other Recipes</h2>
-    <a href="beefRecipes.html">Beef Recipes</a>
-    <a href="chickenRecipes.html">Chicken Recipes</a>
-    <a href="porkRecipes.html">Pork Recipes</a>
-    <a href="veganRecipes.html">Vegan Recipes</a>
-
+</div>
     <div class="navbar">
         <a href="Homepage.html"><img src="assets\home.png"></a>
         <a href="fridge.html"><img src="assets\fridge.png"></a>
@@ -36,5 +114,15 @@
         <a href="Challenges.html"><img src="assets\Challenges.png"></a>
         <a href="Profile.html"><img src="assets\User.png"></a>
     </div>
+
+    <script type="text/javascript">
+        function change()
+        {
+            var url = document.getElementById('val').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
 </body>
 </html>
