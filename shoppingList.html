@@ -18,16 +18,27 @@
         <a href="Profile.html"><img src="assets\User.png"></a>
     </div>
 
-<div>
-    <input type='text' id='input'/>
+
+<div style="font-size: 40;">
+    <h2>Add An Item To Your List:</h2>
+    <label>Product</label>
+    <input type='text' id='input' required/>
+    <br>
+    <br>
+    <label>Amount</label>
+    <input type='number' id='amount' min = 1 required/>
+    <br>
+    <br>
+    <label>For</label>
+    <input type='text' id='user'/>
+    <br>
+    <br>
     <input type="image" src="assets\add.PNG " id="add" height="30" onclick="additem()"/>
-    <input type="image" src="assets\remove.PNG " id="add" height="35" onclick="removeitem()"/>
-    
+    <input type="image" src="assets/remove.PNG" id=remove height="30" onclick="removeitem()"/>
 </div>
 
 
-
-<ul id="list">  
+<ul id="list" style="font-size: 40; text-align: left; background-color: F0F8ED; ">  
 </ul>
 
 
@@ -36,13 +47,15 @@
     function additem(){
         var a = document.getElementById("list");
             var candidate = document.getElementById("input");
+            var amount = document.getElementById("amount");
+            var user = document.getElementById("user");
             var li = document.createElement("li");
             li.setAttribute('input', candidate.value);
-            li.appendChild(document.createTextNode(candidate.value));
-            console.log(li);
+            li.appendChild(document.createTextNode(candidate.value + " (" + amount.value + ") - " + user.value ));
             a.appendChild(li);
             document.getElementById("input").value = "";
     }
+
 /*      function removeitem(){
              var a = document.getElementById("list");
     //         var candidate = document.getElementById("input").value;
