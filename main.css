@@ -178,14 +178,15 @@ label{
 }
 input{
 
+    margin-top: 1em;
 
     font-size:35px;
     border: none;
     filter: drop-shadow(1px 1px 2px #000000) !important;
     padding-left: 1em;
     padding-right: 1em;
-    margin-left: auto;
-    margin-right: auto;
+
+    margin-right: 50px;
 }
 .row{
     height: auto;
