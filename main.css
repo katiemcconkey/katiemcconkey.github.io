@@ -132,6 +132,51 @@ ul {
 .navbar{
 border-radius: 45px 45px 0 0 !important; 
 filter: drop-shadow(2px 2px 3px #000000) !important;
-width: 100%;
+width: 90% !important;
 padding: 1em  0 1em 0; 
+}
+input[type=email]{
+width:80%;
+padding:10px;
+border-radius:35px;
+}
+input[type=password]{
+width:80%;
+padding:10px;
+border-radius:35px;
+}
+input[type=submit] {
+    color: #FFF !important;
+    background-color: #385e1d !important;
+    border-radius: 360px !important;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    filter: drop-shadow(2px 2px 3px #000000) !important;
+    margin-top: 1em;
+}
+
+.secondbtn{
+text-decoration:none;
+    color: #385E1D;
+    font-weight: 600;
+}
+
+
+label{
+    margin: 0px;
+}
+input{
+    margin: 1em;
+    font-size:20px;
+    border: none;
+    filter: drop-shadow(1px 1px 2px #000000) !important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.row{
+    height: auto;
+    padding-top: 0;
 }
