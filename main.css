@@ -134,16 +134,20 @@ width: 90% !important;
 padding: 1em  0 1em 0; 
 }
 input[type=email]{
-box-sizing: border-box;
+
 width:100%;
-padding:10px;
+padding-left:100px;
+padding-right:100px;
+padding-top:20px;
 border-radius:35px;
 }
 input[type=password]{
-box-sizing: border-box;
+
 width:100%;
-padding:10px;
 border-radius:35px;
+padding-left:100px;
+padding-right:100px;
+padding-top:20px;
 }
 input[type=submit] {
     color: #FFF !important;
