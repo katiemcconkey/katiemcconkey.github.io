@@ -163,6 +163,7 @@ input[type=submit] {
     border: none;
     filter: drop-shadow(2px 2px 3px #000000) !important;
     margin-top: 1em;
+
 }
 
 .secondbtn{
@@ -177,12 +178,14 @@ label{
 }
 input{
 
-    margin: 1em;
+
     font-size:35px;
     border: none;
     filter: drop-shadow(1px 1px 2px #000000) !important;
     padding-left: 1em;
     padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .row{
     height: auto;
