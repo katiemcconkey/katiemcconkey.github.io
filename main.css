@@ -1,6 +1,6 @@
 body {
 
-    font-family: 	Trebuchet;
+    font-family: ;
     text-align: center;
 
 }
@@ -166,7 +166,9 @@ background-color: #385E1D;
     margin-left: 1em;
 }
 
-
+.subbutton{
+    margin-left: 10px;
+}
 .secondbtn{
 text-decoration:none;
     color: #385E1D;
