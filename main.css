@@ -1,27 +1,24 @@
 body {
 
-    font-family: ;
+    font-family: sans-serif ;
     text-align: center;
 
 }
 
 h1 {
-    font-family: Trebuchet;
     font-size: 80px;
     color: #385E1D;
     text-align: center;
 }
 
 h2{
-    font-family: Trebuchet;
-    font-size: 60;
+    font-size: 60px;
     color: #68AD36;
     text-align: center;  
 }
 
 h3{
-    font-family: Trebuchet;
-    font-size: 40;
+    font-size: 40px;
     color: #68AD36;
     text-align: center;  
 }
@@ -98,7 +95,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 40;
+    font-size: 40px;
     width: 100%;
     padding: 2.5%;
 }
@@ -166,9 +163,7 @@ background-color: #385E1D;
     margin-left: 1em;
 }
 
-.subbutton{
-    margin-left: 10px;
-}
+
 .secondbtn{
 text-decoration:none;
     color: #385E1D;
