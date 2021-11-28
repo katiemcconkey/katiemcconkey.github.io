@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #F0F8ED;">
     <head>
-        <img src="assets/greenfridge.png" style="border-radius: 50%; height: 700px; width: 700px;">
+        <img class="logo" src="assets/greenfridge.png" style="border-radius: 50%; height: 700px; width: 700px;">
         <meta charset="UTF-8">
         <h1>Login</h1>
         <link rel="stylesheet" href="main.css">   
@@ -11,25 +11,11 @@
         <p style="text-align: center; font-size: 30px;"> Please fill in your email and password.</p>
              <div class="cent">
                     <form action="Homepage.html" method="">
-                    <div class = "row">
-                        <div class ="column">
-                            <label>Email Address</label>
-                        </div>
-                        <div class ="column">
-                            <input type="email" name="email" class="form-control" required/>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "column">
-                            <label>Password</label>
-                        </div>
-                        <div class = "column">
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                    </div>
+                    <input type="email" name="email" class="form-control" placeholder="email address..." required/>
+                                <input type="password" name="password" class="form-control" placeholder="Password..." required>
                     <input type="submit" name="submit" value="Login" style="background-color: #385E1D; border-radius: 4px;">
                         <p > Don't have an account? <a href="Register.html">Register here</a>.</p>
-                </div>
+
 
                     
                     </form>
