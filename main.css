@@ -136,17 +136,20 @@ padding: 1em  0 1em 0;
 input[type=email]{
 
 width:100%;
-padding-left:100px;
-padding-right:100px;
+padding-left:20px;
+padding-right:180px;
 padding-top:20px;
 border-radius:35px;
+align-content: center;
 }
 input[type=password]{
 
 width:100%;
 border-radius:35px;
-padding-left:100px;
-padding-right:100px;
+padding-left:20px;
+padding-right:180px;
+align-content: center;
+
 padding-top:20px;
 }
 input[type=submit] {
