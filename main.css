@@ -140,7 +140,7 @@ padding: 1em  0 1em 0;
 input[type=email]{
 
 width:100%;
-margin-right: 140px;
+
 padding-left:20px;
 
 padding-top:20px;
@@ -148,7 +148,7 @@ border-radius:35px;
 
 }
 input[type=password]{
-margin-right: 140px;
+
 width:100%;
 border-radius:35px;
 padding-left:20px;
@@ -191,7 +191,7 @@ input{
     border: none;
     filter: drop-shadow(1px 1px 2px #000000) !important;
     padding-left: 1em;
-    padding-right: 1em;
+  
 
 
 }
