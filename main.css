@@ -149,24 +149,20 @@ padding-left: 1em;
 width:100%;
 border-radius:35px;
 vertical-align: center;
-
-
-
 padding-top:20px;
 }
-.subbutton {
-    color: #FFF !important;
-    background-color: #385e1d !important;
-    border-radius: 50px !important;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    font-size: 35px;
-    outline: none;
-    border: none;
-    filter: drop-shadow(2px 2px 3px #000000) !important;
-    margin-top: 1em;
-
+input[type=submit]{
+padding-left: 1em;
+width:100%;
+border-radius:350px;
+padding-top:20px;
+padding-bottom:20px;
+vertical-align: middle;
+color: white;
+background-color: #385E1D;
+    font-weight: 600;
 }
+
 
 .secondbtn{
 text-decoration:none;
@@ -181,16 +177,10 @@ label{
 input{
     align-items: center;
     align-self: center;
-
     margin-top: 1em;
-
     font-size:35px;
     border: none;
     filter: drop-shadow(1px 1px 2px #000000) !important;
-
-
-
-
 }
 .row{
     height: auto;
