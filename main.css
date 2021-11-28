@@ -1,32 +1,32 @@
 body {
 
-    font-family: Calibri;
+    font-family: 	Trebuchet;
     text-align: center;
 
 }
 
 h1 {
-    font-family: Calibri;
+    font-family: Trebuchet;
     font-size: 80px;
     color: #385E1D;
     text-align: center;
 }
 
 h2{
-    font-family: Calibri;
+    font-family: Trebuchet;
     font-size: 60;
     color: #68AD36;
     text-align: center;  
 }
 
 h3{
-    font-family: Calibri;
+    font-family: Trebuchet;
     font-size: 40;
     color: #68AD36;
     text-align: center;  
 }
 ul {
-    font-size: helvetica;
+    font-size: Trebuchet;
 }
  .light-theme {
      background : #e2f8d3;
@@ -179,4 +179,8 @@ input{
 .row{
     height: auto;
     padding-top: 0;
+}
+
+.logo{
+    width: 75%;
 }
