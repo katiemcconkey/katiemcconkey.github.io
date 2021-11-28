@@ -198,5 +198,6 @@ input{
 }
 
 .logo{
-    width: 75%;
+    width: 45%;
+    border-radius: 50%;
 }
