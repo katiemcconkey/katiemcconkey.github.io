@@ -133,4 +133,5 @@ ul {
 border-radius: 45px 45px 0 0 !important; 
 filter: drop-shadow(2px 2px 3px #000000) !important;
 width: 100%;
+padding: 1em  0 1em 0; 
 }
