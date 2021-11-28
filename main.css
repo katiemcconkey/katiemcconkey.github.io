@@ -154,7 +154,7 @@ vertical-align: center;
 
 padding-top:20px;
 }
-input[type=submit] {
+.subbutton {
     color: #FFF !important;
     background-color: #385e1d !important;
     border-radius: 50px !important;
