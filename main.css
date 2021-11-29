@@ -196,7 +196,7 @@ input{
 }
 .header{
     text-align: left!important;
-
+    margin-left: 1em;
     height: 10%;
     width: 100%;
     display: inline-block;
@@ -208,4 +208,5 @@ input{
     filter: none !important;
     border-radius: 50%;
 display: inline-block;}
-.name{display: inline;}
+.name{display: inline;
+padding-left: 0.7em;}
