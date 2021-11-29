@@ -1,9 +1,17 @@
 <html>
 <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/45a3e39275.js"></script>
     <script>
         type="text/javascript"
         function additem(){
-            document.getElementById('i').style.visibility="visible";
+                    var x = document.getElementById("i");
+          if (x.style.visibility == "hidden") {
+            x.style.visibility = "visible";
+          } else {
+            x.style.xisibility = "hidden";
+          }
         }
         function remove(){
             document.getElementById('i').style.visibility="hidden";
@@ -15,91 +23,115 @@
             document.getElementById('example').style.visibility="hidden";
             document.getElementById('information').style.visibility="hidden";
         }
+        function add(){
+            document.getElementById('cheese').style.visibility="visible";
+
+        }
     </script>
     <meta charset="UTF-8">
     <title>Shopping List</title>
     <link rel="stylesheet" href="main.css">   
-    <h1> Your Fridge</h1> <input type="image" src="assets/add.PNG" height="40px" width="40px" onclick="additem();">
+         <div class="header" >
+            <img  class="img_header" src="assets/greenfridge.png">
+            <h1 class="name" style="vertical-align: 0px">Your Fridge</h1>
+     </div>
     
 </head>
 <body>
-    <table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center; border-color: #385E1D; font-size: 40;">
-        <tr style="background-color:F0F8ED;">
-            <th><h3>Item</h3></th>
-            <th><h3>Amount</h3></th>
-            <th><h3>Expiry Date</h3></th>
+<div style="background-color: #e2f8d3; padding-top: 2em; width: 100%; height: 100%">
+    <table style="margin-left: auto;margin-right: auto; background-color: #fff; width:80%; font-size:40px; border-radius: 35px; padding-bottom: 1em ">
+        <tr>
+            <th style="border-top-left-radius:35px;  background-color: #385E1D;color: white;">Item</th>
+            <th style="background-color: #385E1D;color: white;">Amount</th>
+            <th style="border-top-right-radius:35px;  background-color: #385E1D;color: white;">Expiry Date</th>
         </tr>
-        <tr id="example">
-            <td id="parm" onclick="info()">Parmesan</td>
-            <td>500g</td>
-            <td>12/12/21</td>
+        <tr id="example" onclick="myFunction()">
+            <td style="padding-left: 0.5em" id="parm" onclick="info()">Chicken Breast</td>
+            <td style="padding-left: 0.5em">500g</td>
+            <td style="padding-left: 0.5em">12/12/21</td>
         </tr>
         <tr>
-            <td>Milk</td>
-            <td>4pints</td>
-            <td>14/12/21</td>
+            <td style="padding-left: 0.5em">Milk</td>
+            <td style="padding-left: 0.5em">4pints</td>
+            <td style="padding-left: 0.5em">14/12/21</td>
         </tr>
         <tr>
-            <td>Pasta</td>
-            <td>4kg</td>
-            <td>30/12/22</td>
+            <td style="padding-left: 0.5em">Pasta</td>
+            <td style="padding-left: 0.5em">4kg</td>
+            <td style="padding-left: 0.5em">30/12/22</td>
         </tr>
         <tr>
-            <td>Butter</td>
-            <td>500g</td>
-            <td>12/12/21</td>
+            <td style="padding-left: 0.5em">Butter</td>
+            <td style="padding-left: 0.5em">500g</td>
+            <td style="padding-left: 0.5em">12/12/21</td>
         </tr>
         <tr>
-            <td>Flour</td>
-            <td>2kg</td>
-            <td>12/12/23</td>
+            <td style="padding-left: 0.5em">Flour</td>
+            <td style="padding-left: 0.5em">2kg</td>
+            <td style="padding-left: 0.5em">12/12/23</td>
         </tr>
         <tr>
-            <td>Carrots</td>
-            <td>2kg</td>
-            <td>29/11/21</td>
+            <td style="padding-left: 0.5em">Carrots</td>
+            <td style="padding-left: 0.5em">2kg</td>
+            <td style="padding-left: 0.5em">29/11/21</td>
         </tr>
         <tr>
-            <td>Yoghurt</td>
-            <td>40g</td>
-            <td>02/12/21</td>
+            <td style="padding-left: 0.5em">Yoghurt</td>
+            <td style="padding-left: 0.5em">40g</td>
+            <td style="padding-left: 0.5em">02/12/21</td>
         </tr>
         <tr>
-            <td>Eggs</td>
-            <td>12</td>
-            <td>10/12/21</td>
+            <td style="padding-left: 0.5em">Eggs</td>
+            <td style="padding-left: 0.5em">12</td>
+            <td style="padding-left: 0.5em">10/12/21</td>
         </tr>
+        <tr id='cheese' style="visibility: hidden">
+            <td style="padding-left: 0.5em">Cheese</td>
+            <td style="padding-left: 0.5em">500g</td>
+            <td style="padding-left: 0.5em">20/12/21</td>
+        </tr>
+
+
     </table>
-    <div id='i' style="visibility: hidden;">
-        <label>Product</label>
-        <input type='text' id='input' required/>
+    <center>
+     <a style="font-size: 60px" class="button" onclick="additem();">Add Item</a>
+
+    <div id='i' style="width:80%;visibility: hidden;">
+
+        <input placeholder="Product" type='text' id='input' required/>
         <br>
         <br>
-        <label>Amount</label>
-        <input type='number' id='amount' min = 1 required/>
+
+        <input placeholder="Quantity" type='number' id='amount' min = 1 required/>
         <br>
         <br>
-        <label>Expiration date</label>
-        <input type='text' id='user'/>
+        <input placeholder="Expiration Date" type='text' id='user'/>
         <br>
         <br>
-        <input type="button" id="submit" value="Add" style="border-color : #F0F8ED; background-color: #F0F8ED; border-radius: 4px;" onclick="remove();">
+        <a class="button" onclick="add()" style="background-color: #385E1D; text-decoration: none; font-size: 55px;width: 100%" >Add Item</a>
+        <a class="button" onclick="additem()" style="background-color: grey; text-decoration: none; font-size: 45px;width: 50%" >Cancel</a>
     </div>
-    <div id='information' style="visibility: hidden; font-size: 30px;">
-        <h2>
+        </center>
+    <div class="panel" id='information' style="visibility: hidden; font-size: 30px; background-color: white;">
+        <h2 style="text-align: left; color: #000000">
             Info:
         </h2>
-        <p>
-            Item: Parmesan
-            <br>
-            Weight: 500g
-            <br>
-            Expires: 12/21/21
-            <br>
-            <input type="button" id="submit" value="Use Item" style="border-color : #F0F8ED; background-color: #F0F8ED; border-radius: 4px;" onclick="removeitem();">
+        <p style="margin: 0">
+        <div>Item: Chicken Breast</div>
+
+        <div>Weight: 500g</div>
+
+            <div style="margin: 0">Remaining: <div style="color: orange; display: inline;">250g</div></div>
+
+        <div>Expires: 12/21/21</div>
+
+            <a class="button" onclick="removeitem();">Use Item</a>
+            <a class="button" style="background-color: grey; text-decoration: none" href="chickenRecipes.html">View Recipes</a>
         </p>
     </div>
 
+
+</div>
     <div class="navbar" class="light-theme">
         <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
         <a href="fridge.html"><img src="assets\fridge.png"style="height: 130px; width: 130px;" ></a>
@@ -109,6 +141,10 @@
         <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
         <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
-    
+
 </body>
+
+
+
+
 </html>
