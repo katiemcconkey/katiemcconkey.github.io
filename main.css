@@ -272,7 +272,7 @@ vertical-align: middle;}
     padding-top: 1em;
     padding-left: 1em;
     position: fixed;
-    bottom: 0;
+    bottom: 25px;
     width: 100%;
     text-align: left !important;
     font-size: 60px !important;
