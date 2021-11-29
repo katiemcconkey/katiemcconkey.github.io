@@ -2,127 +2,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Recipes</title>
-    <link rel="stylesheet" href="main.css">   
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/45a3e39275.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <h1>Recipes</h1>
 
 </head>
 
 <body>
-    <div class="column2">
-        <h3>
-             Sausage Casserole
-        </h3>
-        <div class="table2">
-            <style>
-                table, th, td{
-                    border-bottom: 2px solid #385E1D;
-                    border-collapse: collapse;
-                   
-                }
-                
-            </style>
-            <table style="width: 100%; text-align: center;">
-                <tr>
-                    <h2>
-                      Ingredients:  
-                    </h2>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        8 Sausages
-                    </td>
-                </tr>
-                <tr><td>
-                        1 onion
-                    </td>
-                </tr>
-                    <tr>
-                      <td>
-                        400g tin butter beans
-                    </td>  
-                    </tr>
-                    <tr>
-                      <td>
-                        400g tinned tomato
-                    </td>  
-                    </tr>
-                    <tr>
-                        <td>
-                          500ml chicken stock
-                      </td>  
-                      </tr>
-            </table>
-            </div>
+    <div class="searchheader" style="width: 100%; text-align: center;margin-bottom: 1em">
+        <center>
+        <div style="width: 80%;text-align: center;">
+        <h2 style="padding-top: 0.5em; color: white;font-size: 55px">Search Pork recipes.</h2>
+        <p style="font-size: 35px; color: white;">Search through our list of easy to make pork recipes to use up your fridge contents and help reduce waste.</p>
+        <input style="margin-top:0 !important;vertical-align:middle; display: inline; width: 55%" placeholder="Search pork recipes..." type='text' id='input'/><div class="button" style=" background-color:white; color:#385E1D; width:10%; vertical-align:middle; margin-left:5%;padding-left:3.1%; padding-right: 3.1%;  display: inline; font-size: 30px"><i class="fa fa-search" aria-hidden="true"></i>
+
+        </div>
     </div>
-    <div class="column2">
-        <div class="table2">
-            <style>
-                table, th, td{
-                    border-bottom: 1px solid #385E1D;
-                    border-collapse: collapse;
-                    font-size: 35px;
-                   
-                }
-                
-            </style>
-            <table style="width:100%; text-align: center;">
-                <tr>
-                    <h2>
-                        Method:
-                    </h2>
-                    
-                </tr>
-                <tr>
-                    <td> 
-                        Step 1:
-                        Add sausages to a pan and cook for 6-8 minutes
-                    </td>
-                </tr>
-                <tr><td>
-                        Step 2:
-                        Add onion and continue to cook for 3 minutes
-                    </td>
-                </tr>
-                    <tr>
-                      <td>
-                        Step 3:
-                        Add butter beans, tomatoes and chicken stock to the pan, season well and transfer to a baking dish
-                    </td>  
-                    </tr>
-                    <tr>
-                        <td>
-                          Step 4:
-                          Bake for 25 minutes, serve and enjoy!
-                      </td>  
-                      </tr>
-            </table>
-            </div>
-    </div>
-<div>
-   <p>
-    Or if you'd rather click here view our range of other recipes
-   </p>
-   <form>
-       <select name="dropdown" id="val">
-       <option value="Recipes.html">Recommended Recipes</option>
-       <option value="beefRecipes.html">Beef Recipes</option>
-       <option value="chickenRecipes.html">Chicken Recipes</option>
-       <option value="veganRecipes.html">Vegan Recipes</option>
-   </select>
-   <input type=button value="Go" onclick="change()" style="background-color: #385E1D; border-color: #385E1D; border-radius: 4px;"/>
-   </form>
+        </div>
+
+        <div class="column2">
+            <center>
+            <div class="card" style="width: 80%; border: 1px solid rgba(0,0,0,.125)!important;filter: drop-shadow(2px 2px 3px #000000) !important;">
+  <img class="card-img-top" src="assets\sausage.casjpg.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 50px">Sausage Casserole</h5>
+    <p class="card-text">Sausage casserole makes a wonderfully warming and filling dish, and it freezes brilliantly.</p>
+      <p style="color: #385E1D" href="#" class="card-link"><i class="fa fa-users" aria-hidden="true"></i> Serves 4</p>
+
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" style="font-weight: 600">Ingredients</li>
+    <li class="list-group-item">8 Sausages</li>
+    <li class="list-group-item">1 Onion</li>
+    <li class="list-group-item">400g tin butter beans</li>
+    <li class="list-group-item">400g tinned tomato</li>
+    <li class="list-group-item">500ml chicken stock</li>
+  </ul>
+  <p class="card-text">This recipe will take around one hour to make.</p>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"  style="font-weight: 600">Method</li>
+    <li class="list-group-item"><u><b>Step 1</b></u><br>  Add sausages to a pan and cook for 6-8 minutes</li>
+    <li class="list-group-item"><u><b>Step 2</b></u><br>  Add onion and continue to cook for 3 minutes</li>
+    <li class="list-group-item"><u><b>Step 3</b></u><br>  Add butter beans, tomatoes and chicken stock to the pan, season well and transfer to a baking dish</li>
+    <li class="list-group-item"><u><b>Step 4</b></u><br>  Bake for 25 minutes, serve and enjoy!</li>
+
+  </ul>
+  <div class="card-body">
+    <a style="color: #385E1D" href="#" class="card-link"><i class="fa fa-heart-o" aria-hidden="true"></i> Favourite Recipe</a>
+
+
+  </div>
+
+</div>
+                </center>
+</div>
+
+     <div >
+         <center>
+       <p style=" width:80%;text-align: center!important; font-size: 35px">
+        Or if you'd rather click here view our range of other recipes
+       </p>
+             </center>
+       <form style="text-align: center;font-size: 35px; ">
+           <select name="dropdown" id="val" style="color: #385E1D; border: 1px solid; background-color: white; border-radius: 35px; padding:0.5em 1em 0.5em 1em; width: 50%; vertical-align: middle">
+           <option value="beefRecipes.html">Beef Recipes</option>
+           <option value="chickenRecipes.html">Chicken Recipes</option>
+           <option value="porkRecipes.html">Pork Recipes</option>
+           <option value="veganRecipes.html">Vegan Recipes</option>
+       </select>
+       <input class="button" type=button value="Go" onclick="change()" style="width: 10%; display: inline;padding:0.5em 0.5em 0.5em 0.5em; vertical-align: middle;margin-top: 0;margin-bottom: 0;margin-left: 2%"/>
+       </form>
+       <br> <br> <br> <br> <br>
+
+
+   </div>
    
 
 </div>
-    <div class="navbar">
-        <a href="Homepage.html"><img src="assets\home.png"></a>
-        <a href="fridge.html"><img src="assets\fridge.png"></a>
-        <a href="shoppingList.html"><img src="assets\shopping.png"></a>
-        <a href="Recipes.html"><img src="assets\recipes.png"></a>
-        <a href="LikedRecipes.html"><img src="assets\heart.png"></a>
-        <a href="Challenges.html"><img src="assets\Challenges.png"></a>
-        <a href="Profile.html"><img src="assets\User.png"></a>
+    <div class="navbar" class="light-theme">
+        <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
+        <a href="fridge.html"><img src="assets\fridge.png"style="height: 130px; width: 130px;" ></a>
+        <a href="shoppingList.html"><img src="assets\shopping.png" style="height: 130px; width: 130px;"></a>
+        <a href="Recipes.html"><img src="assets\recipes.png" style="height: 130px; width: 130px;"></a>
+        <a href="likedRecipes.html"><img src="assets\heart.png" style="height: 130px; width: 130px;"></a>
+        <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
+        <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
 
     <script type="text/javascript">
