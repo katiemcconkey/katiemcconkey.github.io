@@ -2,15 +2,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Liked Recipes</title>
-    <link rel="stylesheet" href="main.css">   
-    <h1>Liked Recipes</h1>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/45a3e39275.js"></script>
+
 </head>
 <body>
-  
+  <div class="header" style="vertical-align: middle">
+            <img  class="img_header" src="assets/greenfridge.png">
+            <h1 class="name">Recipes</h1>
+     </div>
+<center>
+  <div class="card mb-3" style="width: 80%">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img style="object-fit: cover; align-content: flex-start;" src="assets\chickeng.jpg" class="card-img" alt="..." height="100%" width="100%">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Chicken Goujons</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="#" class="button">View Recipe</a><a style="color: #385E1D" href="#" id="buttonshare" class="card-link"><i class="fa fa-share-alt-square" aria-hidden="true"></i>Share</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="..." class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 <table class="likedrecipes">
     <tr>
         <td><img src="assets\heart.png" width=25% height=25%></td>
-        <td><a href="chickenRecipes.html">Chicken Goujons</a></td>
+        <td><a href="chickenRecipes.html"></a></td>
         <td><button type="button" Style="background-color: #68AD36; border-radius: 4px; font-size: 40; color: #385E1D;" onclick=chickenlink()>  Copy Link</button></td>
     </tr>
     <tr>
@@ -43,7 +79,27 @@
     function beeflink(){
         alert("Here is the link to the Beef Stew recipe! Copy to share: https://katiemcconkey.github.io/beefRecipes.html");
     }
-</script>
 
+    const shareData = {
+    title: 'MDN',
+    text: 'Learn web development on MDN!',
+    url: 'https://developer.mozilla.org'
+  }
+
+  const btn = document.getElementById('buttonshare');
+  const resultPara = document.querySelector('.result');
+
+  // Share must be triggered by "user activation"
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData)
+      resultPara.textContent = 'MDN shared successfully'
+    } catch(err) {
+      resultPara.textContent = 'Error: ' + err
+    }
+  });
+
+</script>
+</center>
 </body>
 </html>
