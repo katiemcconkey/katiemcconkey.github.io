@@ -232,7 +232,7 @@ input{
     filter: drop-shadow(1px 1px 2px #000000) !important;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    height: auto;
+    height: 5%;
 }
 .img_header{
     height: 70px;
