@@ -2,130 +2,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Recipes</title>
-    <link rel="stylesheet" href="main.css">   
-    <h1> Recipes </h1>
+    <link rel="stylesheet" href="main.css">
+
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/45a3e39275.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div>
-        <img src= "assets/search.PNG" style="height: 35; width: 35;">
-        <input type='text' id='input'/>
+    <div class="header" >
+            <img  class="img_header" src="assets/greenfridge.png">
+            <h1 class="name" style="vertical-align: 0px">Recipes</h1>
+     </div>
+    <div class="searchheader" style="width: 100%; text-align: center;">
+        <center>
+        <div style="width: 80%;text-align: center;">
+        <h2 style="padding-top: 0.5em; color: white;">Search For recipes.</h2>
+        <p style="font-size: 35px; color: white;">Search through our list of easy to make recipes to use up your fridge contents and help reduce waste.</p>
+        <input style="margin-top:0 !important;vertical-align:middle; display: inline; width: 55%" placeholder="Search recipes..." type='text' id='input'/><div class="button" style=" background-color:white; color:#385E1D; width:10%; vertical-align:middle; margin-left:5%;padding-left:3.1%; padding-right: 3.1%;  display: inline; font-size: 30px"><i class="fa fa-search" aria-hidden="true"></i>
+
+        </div>
+            </div>
     </div>
     <div style="text-align: center; font-size: 20px;">
-        <p>
-            Here is a recommended recipe based on food you have in your fridge currently.
+        <p style="font-size: 35px; color: #385E1D; font-weight: 500;">
+            Here is a recommended recipe based on food you currently have in your fridge.
         </p>
     </div>
 
         <div class="column2">
-            <h3>
-                Mac and Cheese
-            </h3>
-            <div class="table2">
-                <style>
-                    table, th, td{
-                        border-bottom: 2px solid #385E1D;
-                        border-collapse: collapse;
-                       
-                    }
-                    
-                </style>
-                <table style="width: 100%; text-align: center;">
-                    <tr>
-                        <h2>
-                          Ingredients:  
-                        </h2>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            700ml milk
-                        </td>
-                    </tr>
-                    <tr><td>
-                            350g pasta
-                        </td>
-                    </tr>
-                        <tr>
-                          <td>
-                            50g butter
-                        </td>  
-                        </tr>
-                        <tr>
-                          <td>
-                            50g plain flour
-                        </td>  
-                        </tr>
-                        <tr>
-                        <td>
-                            50g parmesan
-                        </td>
-                    </tr>
-                </table>
-                </div>
+            <center>
+            <div class="card" style="width: 80%; border: 1px solid rgba(0,0,0,.125)!important;">
+  <img class="card-img-top" src="assets\mac-and-cheese.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Mac and Cheese</h5>
+    <p class="card-text">Creamy mac and cheese oven baked to perfection. Perfect for a cold winters day.</p>
+      <p style="color: #385E1D" href="#" class="card-link"><i class="fa fa-users" aria-hidden="true"></i> Serves 4</p>
+
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" style="font-weight: 600">Ingredients</li>
+    <li class="list-group-item">700ml milk</li>
+    <li class="list-group-item">350g pasta</li>
+    <li class="list-group-item">50g butter</li>
+    <li class="list-group-item">50g plain flour</li>
+    <li class="list-group-item">50g parmesan</li>
+  </ul>
+  <p class="card-text">This recipe will take around one hour to make.</p>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"  style="font-weight: 600">Method</li>
+    <li class="list-group-item"><u><b>Step 1</b></u><br> Cook the pasta</li>
+    <li class="list-group-item"><u><b>Step 2</b></u><br>  Make a roux, to do this heat butter and flour over heat</li>
+    <li class="list-group-item"><u><b>Step 3</b></u><br>  Stir milk into sauce and simmer until thick and then add the cheese</li>
+    <li class="list-group-item"><u><b>Step 4</b></u><br>  Add pasta and bake for 15-20 mins, then serve and enjoy!</li>
+
+  </ul>
+  <div class="card-body">
+    <a style="color: #385E1D" href="#" class="card-link"><i class="fa fa-heart-o" aria-hidden="true"></i> Favourite Recipe</a>
+
+
+  </div>
+
+</div>
+                </center>
+</div>
+
+
+
         </div>
-        <div class="column2">
-            <div class="table2">
-                <style>
-                    table, th, td{
-                        border-bottom: 1px solid #385E1D;
-                        border-collapse: collapse;
-                        font-size: 35px;
-                       
-                    }
-                    
-                </style>
-                <table style="width:100%; text-align: center;">
-                    <tr>
-                        <h2>
-                            Method:
-                        </h2>
-                        
-                    </tr>
-                    <tr>
-                        <td> 
-                            Step 1:
-                            Cook the pasta
-                        </td>
-                    </tr>
-                    <tr><td>
-                            Step 2:
-                            Make a roux, to do this heat butter and flour over heat
-                        </td>
-                    </tr>
-                        <tr>
-                          <td>
-                            Step 3:
-                            Stir milk into sauce and simmer until thick and then add the cheese
-                        </td>  
-                        </tr>
-                        <tr>
-                          <td>
-                            Step 4: 
-                            Add pasta and bake for 15-20 mins, then serve and enjoy!
-                        </td>  
-                        </tr>
-                </table>
-                </div>
-        </div>
+
    <div>
-       <p>
+       <p style="text-align: center; font-size: 30px">
         Or if you'd rather click here view our range of other recipes
        </p>
-       <form>
-           <select name="dropdown" id="val">
+       <form style="text-align: center">
+           <select name="dropdown" id="val" style="background-color: white; border-radius: 35px; padding:0.5em 1em 0.5em 1em; width: 50%; vertical-align: middle">
            <option value="beefRecipes.html">Beef Recipes</option>
            <option value="chickenRecipes.html">Chicken Recipes</option>
            <option value="porkRecipes.html">Pork Recipes</option>
            <option value="veganRecipes.html">Vegan Recipes</option>
        </select>
-       <input type=button value="Go" onclick="change()" style="background-color: #385E1D; border-color: #385E1D; border-radius: 4px;"/>
+       <input class="button" type=button value="Go" onclick="change()" style="width: 10%; display: inline;padding:0.5em 1em 0.5em 1em; vertical-align: middle;margin-top: 0;margin-bottom: 0;margin-left: 2%"/>
        </form>
-       
+       <br> <br> <br> <br> <br>
+
 
    </div>
-    
+    </center>
     <div class="navbar" class="light-theme">
         <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
         <a href="fridge.html"><img src="assets\fridge.png"style="height: 130px; width: 130px;" ></a>
@@ -135,6 +99,7 @@
         <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
         <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
+
     <script type="text/javascript">
         function change()
         {

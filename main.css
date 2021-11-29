@@ -277,3 +277,9 @@ vertical-align: middle;}
     text-align: left !important;
     font-size: 60px !important;
 }
+
+.searchheader{
+    background-color: #385E1D;
+    padding-bottom: 1.5em;
+    vertical-align: middle;
+}
