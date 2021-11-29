@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+
 <html lang = "en">
     <head>
-        <link rel="stylesheet" href="main.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/45a3e39275.js"></script>
+
 
 
 
@@ -16,34 +21,97 @@
             <img  class="img_header" src="assets/greenfridge.png">
             <h1 class="name">GreenFridge</h1>
      </div>
-    <div class="column">
-        <div class="row">
-                <h2 style="font-size: 40px;">
-                    Weekly Challenges:
-                </h2>
-                <div class="row">
-                    <p>
-                    <input type="radio" id= "challenge1" style="border-color: #68AD36;">
-                    <label style="font-size: 25px;" for="challenge1">Try completing a full day of eating vegan food to earn your food hero badge</label>
-                    <img src="assets/lock.jpg" style="height: 20px; width: 20px;">
-                    <div></div>
-                    <input type="radio" id= "challenge2" style="border-color: #68AD36;">
-                    <label style="font-size: 25px;"for="challenge2">Try to reduce your food waste by 50% to earn your eco warrior badge</label>
-                    <img src="assets/lock.jpg" style="height: 20px; width: 20px;">
-                    <div></div>
-                    <input type="radio" id= "challenge3" style="border-color: #68AD36;" >
-                    <label style="font-size: 25px;" for="challenge3">Go zero waste for a full day to earn your save the turtles badge</label>
-                    <img src="assets/lock.jpg" id = "1" style="height: 20px; width: 20px;" >
-                    <div></div>
-                    <input type="radio" id= "challenge4" style="border-color: #68AD36;" >
-                    <label style="font-size: 25px;" for="challenge4">Switch to a plant based substitute e.g.oat milk to earn your plant lover badge</label>
-                    <img src="assets/lock.jpg" id = "1" style="height: 20px; width: 20px;" >
-                </p> </div>
-                
-            </div>
-            <div class="row">
-                
-            </div>
+
+     <div class="weekly_challenges">
+         <p class="header_block">Weekly Challenges</p>
+         <div class="body_block">
+             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <center>
+     <div class="card text-center" style="width: 55%; color: black">
+  <div class="card-header">
+    <i class="fa fa-trophy" style="color: black"></i> Weekly Challenge 1
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Food Hero</h5>
+    <p class="card-text">Try completing a full day of eating vegan food to earn your food hero badge.</p>
+    <a href="#" class="btn btn-primary" style="background-color: #385E1D;">Claim Badge</a>
+  </div>
+  <div class="card-footer text-muted">
+    7 days remaining.
+  </div>
+</div>
+            </center>
+    </div>
+
+      <div class="carousel-item active">
+        <center>
+     <div class="card text-center" style="width: 55%; color: black">
+  <div class="card-header">
+    <i class="fa fa-trophy" style="color: black"></i> Weekly Challenge 2
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Eco Warrior</h5>
+    <p class="card-text">Try to reduce your food waste by 50% to earn your eco warrior badge.</p>
+    <a href="#" class="btn btn-primary" style="background-color: #385E1D;">Claim Badge</a>
+  </div>
+  <div class="card-footer text-muted">
+    7 days remaining.
+  </div>
+</div>
+            </center>
+    </div>
+
+      <div class="carousel-item active">
+        <center>
+     <div class="card text-center" style="width: 55%; color: black">
+  <div class="card-header">
+    <i class="fa fa-trophy" style="color: black"></i> Weekly Challenge 3
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Save the turtles</h5>
+    <p class="card-text">Go zero waste for a full day to earn your save the turtles badge.</p>
+    <a href="#" class="btn btn-primary" style="background-color: #385E1D;">Claim Badge</a>
+  </div>
+  <div class="card-footer text-muted">
+    5 days remaining.
+  </div>
+</div>
+            </center>
+    </div>
+
+            <div class="carousel-item active">
+        <center>
+     <div class="card text-center" style="width: 55%; color: black">
+  <div class="card-header">
+    <i class="fa fa-trophy" style="color: black"></i> Weekly Challenge 4
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Plant Lover</h5>
+    <p class="card-text">Switch to a plant based substitute e.g.oat milk to earn your plant lover badge.</p>
+    <a href="#" class="btn btn-primary" style="background-color: #385E1D;">Claim Badge</a>
+  </div>
+  <div class="card-footer text-muted" style="color: darkred">
+    1 days remaining.
+  </div>
+</div>
+            </center>
+    </div>
+
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
             <div class="row">
                 <div class="table">
                     <h2 style="font-size: 40px;">
@@ -124,6 +192,7 @@
             <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
             <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
         </div>
+     <br><br><br><br><br><br><br><br><br><br>
          <script>
         function change(){
             var i = getElementById("1")
@@ -131,5 +200,7 @@
         }
     </script>
     </body>
-   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>

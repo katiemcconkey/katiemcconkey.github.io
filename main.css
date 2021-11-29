@@ -209,4 +209,15 @@ input{
     border-radius: 50%;
 display: inline-block;}
 .name{display: inline;
-padding-left: 0.7em;}
+padding-left: 0.2em;}
+
+.weekly_challenges{
+    background-color: #385E1D;
+    color: white;
+    padding-top: 0.5em;
+    margin-top: 1em;
+}
+.header_block{
+    font-weight: 700;
+    font-size: 35px;
+}
