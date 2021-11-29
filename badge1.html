@@ -3,19 +3,22 @@
     
     <head>
         <link rel="stylesheet" href="main.css"> 
-        <p style="text-align:center">
-        <h1>Green Machine Badge</h1>
-        </p>
+
     </head>
     <body>
-        <input type="image" src="assets\veg.png" id="add" height="200" width="200" />
-        <p>
+    <p style="text-align:center">
+        <h1>Green Machine Badge</h1>
+        </p>
+    <center>
+        <input style="padding-left: 140px" class="shimmer" type="image" src="assets\veg.png" id="add" height="200" width="200" />
+        </center>
+        <p style="font-size: 60px;">
             Well Done! 
         </p>
-        <p>
+        <p style="font-size: 45px;">
             You earned this badge by eating a vegetarian diet one day a week for a month.
         </p>
-        <p>
+        <p style="font-size: 45px;">
             This is equivalent to 50 points! Check your friends badges and points to see how you compare
         </p>
         <div class="navbar" class="light-theme">
@@ -27,8 +30,9 @@
             <a href="Challenges.html"><img src="assets\Challenges.PNG" style="height: 130px; width: 130px;"></a>
             <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
         </div>
-        <button type="button" Style="background-color: #68AD36; border-radius: 4px; width: 600px; height: 100px; font-size: 25px;" onclick=funfact()> Click here for an interesting climate change fact</button>
-
+    <center>
+        <button style="font-size: 45px;" type="button" class="button" onclick=funfact()> Click here for an interesting climate change fact</button>
+    </center>
         <script>
             function funfact(){
                 alert("Did you know if everyone went vegetarian by 2050 that food based emission would drop by 60%");
