@@ -221,3 +221,8 @@ padding-left: 0.2em;}
     font-weight: 700;
     font-size: 35px;
 }
+.btn-primary{outline: none;border: none;}
+.body_block{
+    padding-bottom: 1em;
+    font-size: 30px;
+}
