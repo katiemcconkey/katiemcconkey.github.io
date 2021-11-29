@@ -95,22 +95,22 @@
       resultPara.textContent = 'Error: ' + err
     }
   });
-      const shareData = {
+      const shareData2 = {
     title: 'Shared Recipe',
     text: 'Your friend shared a recipe with you',
     url: 'https://katiemcconkey.github.io/beefRecipes.html'
   }
 
-  const btn = document.getElementById('buttonshare2');
-  const resultPara = document.querySelector('.result');
+  const btn2 = document.getElementById('buttonshare2');
+  const resultPara2 = document.querySelector('.result');
 
   // Share must be triggered by "user activation"
-  btn.addEventListener('click', async () => {
+  btn2.addEventListener('click', async () => {
     try {
-      await navigator.share(shareData)
-      resultPara.textContent = 'Recipe shared successfully'
+      await navigator.share(shareData2)
+      resultPara2.textContent = 'Recipe shared successfully'
     } catch(err) {
-      resultPara.textContent = 'Error: ' + err
+      resultPara2.textContent = 'Error: ' + err
     }
   });
 
