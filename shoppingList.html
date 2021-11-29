@@ -1,13 +1,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Shopping List</title>
-    <link rel="stylesheet" href="main.css">   
-    <h1> Shopping List </h1>
+    <title>Liked Recipes</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/45a3e39275.js"></script>
 
 </head>
-
 <body>
+  <div class="header" style="vertical-align: middle">
+            <img  class="img_header" src="assets/greenfridge.png">
+            <h1 class="name">GreenFridge</h1>
+     </div>
+<center>
+
+    <div style="background-color: #385E1D">
+    <h3 style="padding-top: 1em;padding-bottom: 0em; font-weight:700; background-color: #385E1D; color: white; font-size: 60px;">Your shopping list.</h3>
+
+
+
+
+<div style="font-size: 40px; width: 80%;">
+    <h2 style="color: white">Add An Item To Your List:</h2>
+    <input placeholder="Product..." type='text' id='input' required/>
+    <br>
+    <input placeholder="Quantity..." type='number' id='amount' min = 1 required/>
+    <br>
+    <input placeholder="Required by..." type='text' id='user'/>
+    <br>
+    <a class="button" style="background-color: white;color: #385E1D;" onclick="additem()">Add item</a>
+    <br>
+
+
+</div>
+</div>
+
+
+
+<ul id="list" style=" list-style-type: circle; font-size: 40px; text-align: center; background-color: #F0F8ED;">
+    <p style="border-bottom: dashed 3px #385E1D">Your Shopping List</p>
+</ul>
+
     <div class="navbar" class="light-theme">
         <a href="Homepage.html"><img src="assets\home.png" style="height: 130px; width: 130px;"></a>
         <a href="fridge.html"><img src="assets\fridge.png"style="height: 130px; width: 130px;" ></a>
@@ -18,31 +52,6 @@
         <a href="Profile.html"><img src="assets\User.PNG"style="height: 130px; width: 130px;" ></a>
     </div>
 
-
-<div style="font-size: 40;">
-    <h2>Add An Item To Your List:</h2>
-    <label>Product</label>
-    <input type='text' id='input' required/>
-    <br>
-    <br>
-    <label>Amount</label>
-    <input type='number' id='amount' min = 1 required/>
-    <br>
-    <br>
-    <label>For</label>
-    <input type='text' id='user'/>
-    <br>
-    <br>
-    <input type="image" src="assets\add.PNG " id="add" height="30" onclick="additem()"/>
-    <input type="image" src="assets/remove.PNG" id=remove height="30" onclick="removeitem()"/>
-</div>
-
-
-<ul id="list" style=" list-style-type: circle; font-size: 40; text-align: left; background-color: F0F8ED;">  
-</ul>
-
-
-
 <script>
     function additem(){
         var a = document.getElementById("list");
@@ -52,6 +61,7 @@
             var li = document.createElement("li");
             li.setAttribute('input', candidate.value);
             li.appendChild(document.createTextNode(candidate.value + " (" + amount.value + ") - " + user.value ));
+            li.style.borderBottom="solid 2px black"
             a.appendChild(li);
             document.getElementById("input").value = "";
             document.getElementById("amount").value = "";
