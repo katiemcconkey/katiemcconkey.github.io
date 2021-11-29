@@ -31,7 +31,8 @@ h3{
  .navbar{
      background-color: white;
      position:fixed;
-     bottom:0;
+     z-index: 2;
+     bottom:0 !important;
      width:100%;
  }
 .Fridge{
